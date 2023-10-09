@@ -1,1 +1,0 @@
-# mansa_capital_web_app
