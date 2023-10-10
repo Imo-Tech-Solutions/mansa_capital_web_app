@@ -5,7 +5,7 @@ const SearchBank = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All'); // Default category
 
-  const categories = ['All Categories', 'Category 1', 'Category 2', 'Category 3']; // Add your own categories
+  const categories = ['All Categories', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 6']; // Add your own categories
 
   const handleSearch = () => {
     // Implement your search logic here
@@ -13,7 +13,7 @@ const SearchBank = () => {
   };
 
   return (
-    <div>
+    <>
 
       <div className='w-full py-10 flex flex-col justify-center sm:pl-16 px-8 bg-gray-100'>
         <h1 className='text-gray-700 text-5xl font-bold'>
@@ -64,7 +64,12 @@ const SearchBank = () => {
         </div>
       </div>
 
-    </div>
+
+
+
+
+
+    </>
   )
 }
 
