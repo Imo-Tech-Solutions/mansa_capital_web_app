@@ -1,12 +1,43 @@
 import React, { useState } from 'react';
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
+
+
+
+// Define the Map component separately from SearchBank
+const Map = () => {
+  const mapContainerStyle = {
+    width: '100%',
+    height: '400px',
+  };
+
+  const center = {
+    lat: 51.7520, // Latitude of University of Oxford
+    lng: -1.2577, // Longitude of University of Oxford
+  };
+
+  return (
+    <div className="w-full h-96">
+      <LoadScript googleMapsApiKey="AIzaSyBGWk_4Eb--QPVPl6yAn4NN_EsqbQnJLyk">
+        <GoogleMap
+          mapContainerStyle={mapContainerStyle}
+          center={center}
+          zoom={14}
+          className="w-full h-full"
+        >
+          {/* You can add markers, overlays, or other map components here */}
+        </GoogleMap>
+      </LoadScript>
+    </div>
+  );
+};
+
+
 
 const SearchBank = () => {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All'); // Default category
-
   const categories = ['All Categories', 'Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5', 'Category 6']; // Add your own categories
-
   const handleSearch = () => {
     // Implement your search logic here
     console.log('Searching for:', searchTerm, 'in category:', selectedCategory);
@@ -64,9 +95,7 @@ const SearchBank = () => {
         </div>
       </div>
 
-
-
-
+      <Map />
 
 
     </>
