@@ -33,7 +33,7 @@ const SearchBank = () => {
               type="text"
               className="h-10 pl-8 pr-3 text-sm bg-white border rounded
                         focus:outline-none focus:border-orange-500 w-full"
-              placeholder="Search"
+              placeholder="Search for your bank"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
