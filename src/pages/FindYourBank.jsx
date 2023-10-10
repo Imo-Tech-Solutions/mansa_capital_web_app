@@ -1,10 +1,10 @@
 import React from 'react'
-import Inprogress from '../components/Inprogress'
+import Banner from '../components/findYourBank/Banner'
 
 const FindYourBank = () => {
   return (
     <div>
-        <Inprogress />
+        <Banner />
     </div>
   )
 }
