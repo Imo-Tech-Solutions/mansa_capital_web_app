@@ -59,38 +59,40 @@ const SearchBank = () => {
 
       <div className='w-full py-10 flex justify-center items-center bg-gray-100'>
         <div className="flex mt-3 sm:w-1/2 w-10/12">
-          <div className="relative inline-block text-gray-600 w-full ">
-            <input
-              type="text"
-              className="h-10 pl-8 pr-3 text-sm bg-white border rounded
-                        focus:outline-none focus:border-orange-500 w-full"
-              placeholder="Search for your bank"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-            <div className="absolute inset-y-0 right-0 flex items-center pr-5">
-              <select
-                className="text-sm text-gray-500 bg-white focus:outline-none
-                    focus:border-gray-300"
-                value={selectedCategory}
-                onChange={(e) => setSelectedCategory(e.target.value)}
-              >
-                {categories.map((category) => (
-                  <option key={category} value={category}>
-                    {category}
-                  </option>
-                ))}
-              </select>
+          <div className='w-full flex sm:flex-row flex-col'>
+            <div className="relative inline-block text-gray-600 w-full">
+              <input
+                type="text"
+                className="h-10 pl-8 pr-3 text-sm bg-white border rounded
+                          focus:outline-none focus:border-orange-500 w-full"
+                placeholder="Search for your bank"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+              <div className="absolute inset-y-0 right-0 flex items-center pr-5">
+                <select
+                  className="text-sm text-gray-500 bg-white focus:outline-none
+                      focus:border-gray-300"
+                  value={selectedCategory}
+                  onChange={(e) => setSelectedCategory(e.target.value)}
+                >
+                  {categories.map((category) => (
+                    <option key={category} value={category}>
+                      {category}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
 
-            <button
-            className="ml-2 p-y px-4 text-white bg-orange-500 rounded
-                absolute inset-y-0
-                hover:bg-orange-400 focus:outline-none"
-            onClick={handleSearch}
-            >
-              Search
-            </button>
+              <button
+              className="ml-2 p-y px-4 text-white bg-orange-500 rounded
+                  hover:bg-orange-400 focus:outline-none py-2 mt-4 sm:mt-0"
+              onClick={handleSearch}
+              >
+                Search
+              </button>
+
           </div>
         </div>
       </div>
