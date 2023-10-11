@@ -89,10 +89,12 @@ const Card = ({ icon, heading, descriptions, link }) => {
 const KeyServiceAreas = () => {
   return (
     <div className="flex flex-wrap w-full justify-center items-center mt-16 mb-10">
-      <h2 className='text-gray-700 font-bold text-4xl mb-5'>Our Expertise and Key Service Areas</h2>
+      <h2 className='text-gray-700 font-bold sm:text-4xl text-3xl mb-5 ml-4 sm:ml-0'>
+        Our Expertise and Key Service Areas
+      </h2>
       <div className="flex flex-wrap w-11/12 justify-center items-center">
         {cardData.map((card) => (
-          <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-0 gap-2 sm:gap-0" key={card.id}>
+          <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-0 gap-2 sm:gap-0 sm:mt-0 mt-6" key={card.id}>
             <Card
               icon={card.icon}
               heading={card.heading}
