@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState   } from 'react';
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { useState } from "react";
 import logo from "../asset/logo.png"
 
 
@@ -20,6 +19,8 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobileSize, setIsMobileSize] = useState(window.innerWidth <= 1200); // Adjust the breakpoint to 1200px
   const location = useLocation();
+  const activeLinkRef = useRef(null);
+  const [activeLink, setActiveLink] = useState('/'); // Initialize active link to the home page
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -38,6 +39,29 @@ function NavBar() {
       window.removeEventListener('resize', handleResize);
     };
   }, [location]);
+
+  useEffect(() => {
+    // When the location changes, set focus back to the active link
+    if (activeLinkRef.current) {
+      activeLinkRef.current.focus();
+    }
+  }, [location]);
+
+  useEffect(() => {
+    // When the location changes, set focus back to the active link
+    if (activeLinkRef.current) {
+      activeLinkRef.current.focus();
+    }
+  }, [location, activeLink]);
+
+  const handleNavLinkClick = (href) => {
+    setActiveLink(href);
+    if (isMobileSize) {
+      setIsOpen(false); // Close the mobile menu when a link is clicked
+    }
+  };
+
+
 
   return (
     <nav className="bg-white shadow top-0 w-full fixed z-10" aria-label="Top">
@@ -91,11 +115,14 @@ function NavBar() {
                     key={item.name}
                     exact
                     to={item.href}
-                    className="px-3 py-2  rounded-md text-sm font-bold text-gray-800 hover:text-orange-500
+                    className={`px-3 py-2 rounded-md text-sm font-bold text-gray-800 hover:text-orange-500
                     hover:bg-gray-100 focus:outline-none focus:text-orange-500
-                    focus:bg-gray-100 transition duration-150 ease-in-out"
-                    activeClassName="bg-orange-100"
-                    onClick={toggleMenu}
+                    focus:bg-gray-100 transition duration-150 ease-in-out ${
+                      activeLink === item.href ? 'bg-gray-100 text-orange-500' : ''
+                    }`}
+                      onClick={() => handleNavLinkClick(item.href)}
+                      tabIndex={item.href === '/' ? '0' : '-1'} // Set tabIndex for the home link
+                      ref={item.href === activeLink ? activeLinkRef : null}
                   >
                     {item.name}
                   </NavLink>
@@ -121,11 +148,14 @@ function NavBar() {
                 key={item.name}
                 exact
                 to={item.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-orange-500
-                hover:bg-gray-100 focus:outline-none focus:text-orange-500
-                focus:bg-gray-100 transition duration-150 ease-in-out"
-                activeClassName="bg-gray-100"
-                onClick={toggleMenu}
+                className={`px-3 py-2 rounded-md text-sm font-bold text-gray-800 hover:text-orange-500
+                    hover:bg-gray-100 focus:outline-none focus:text-orange-500
+                    focus:bg-gray-100 transition duration-150 ease-in-out ${
+                      activeLink === item.href ? 'bg-gray-100 text-orange-500' : ''
+                    }`}
+                      onClick={() => handleNavLinkClick(item.href)}
+                      tabIndex={item.href === '/' ? '0' : '-1'} // Set tabIndex for the home link
+                      ref={item.href === activeLink ? activeLinkRef : null}
               >
                 {item.name}
               </NavLink>
