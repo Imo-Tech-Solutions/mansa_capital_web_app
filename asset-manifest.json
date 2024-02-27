@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mansa_capital_web_app/static/css/main.95524df6.css",
-    "main.js": "/mansa_capital_web_app/static/js/main.7999f818.js",
+    "main.css": "/mansa_capital_web_app/static/css/main.def4400f.css",
+    "main.js": "/mansa_capital_web_app/static/js/main.a1471210.js",
     "static/media/logo.png": "/mansa_capital_web_app/static/media/logo.d9972044368acdbd59f4.png",
     "static/media/banner_1.png": "/mansa_capital_web_app/static/media/banner_1.c9f65cdf207034cb168b.png",
     "static/media/banner_2.png": "/mansa_capital_web_app/static/media/banner_2.89228e8fcaa61eb8ff16.png",
@@ -45,11 +45,11 @@
     "static/media/icons_facebook.svg": "/mansa_capital_web_app/static/media/icons_facebook.dc95ed1faf363ce00088f7c6a27274f8.svg",
     "static/media/icons_Instagram.svg": "/mansa_capital_web_app/static/media/icons_Instagram.ffc69cf288ef412598c675413fcf1d4b.svg",
     "static/media/icon_Facebook.svg": "/mansa_capital_web_app/static/media/icon_Facebook.6a69e17929853d8eeebf8d1975c4bb83.svg",
-    "main.95524df6.css.map": "/mansa_capital_web_app/static/css/main.95524df6.css.map",
-    "main.7999f818.js.map": "/mansa_capital_web_app/static/js/main.7999f818.js.map"
+    "main.def4400f.css.map": "/mansa_capital_web_app/static/css/main.def4400f.css.map",
+    "main.a1471210.js.map": "/mansa_capital_web_app/static/js/main.a1471210.js.map"
   },
   "entrypoints": [
-    "static/css/main.95524df6.css",
-    "static/js/main.7999f818.js"
+    "static/css/main.def4400f.css",
+    "static/js/main.a1471210.js"
   ]
 }
