@@ -10,13 +10,13 @@ const InvestInYourCommunity = () => {
 
   return (
     <section className='bg-gray-100'>
-    <div class="container max-w-8xl mx-auto m-8">
+    <div class="flex justify-center items-center w-full mx-auto m-8">
 
       <div
-        class="flex flex-wrap flex-col-reverse sm:flex-row"
+        class="flex flex-wrap flex-col-reverse sm:flex-row max-w-7xl"
       >
         <div class="w-full sm:w-1/2 p-6
-             px-5 flex flex-col justify-center"
+             px-5 flex flex-col justify-center items-center"
         >
 
           <h2 className='sm:text-5xl text-4xl text-gray-700 font-bold mt-2'>
@@ -44,8 +44,8 @@ const InvestInYourCommunity = () => {
           </p>
 
         </div>
-        <div class="w-full sm:w-1/2 sm:order-first">
-          <img class="w-full h-full" src={phone3} alt="image" />
+        <div class="w-full items-center justify-center sm:w-1/2 sm:order-first">
+          <img class="w-full h-auto" src={phone3} alt="image" />
         </div>
       </div>
     </div>

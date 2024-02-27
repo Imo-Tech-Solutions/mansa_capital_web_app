@@ -14,10 +14,10 @@ function Banner() {
         >
             <div
             className="
-            container flex flex-col justify-center p-6
-            sm:py-16 lg:py-24 lg:px-14 lg:flex-row
+            w-full flex flex-col justify-center
+            sm:py-16 lg:py-24 lg:flex-row
             lg:justify-between pb-12 pt-20
-            xl:ml-5  "
+            xl:ml-5 max-w-7xl"
             >
             <div
                 className="

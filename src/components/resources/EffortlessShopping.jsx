@@ -9,10 +9,10 @@ const EffortlessShopping = () => {
       };
   return (
     <section className='mt-24'>
-      <div class="w-full mx-auto my-8 overflow-hidden">
+      <div class="flex justify-center items-center w-full mx-auto my-8 overflow-hidden">
 
         <div
-          class="flex flex-wrap flex-col-reverse sm:flex-row"
+          class="flex flex-wrap flex-col-reverse sm:flex-row max-w-7xl"
         >
           <div class="w-full sm:w-1/2 p-6
                 px-5 flex flex-col justify-center"
@@ -42,7 +42,7 @@ const EffortlessShopping = () => {
           </p>
 
           </div>
-          <div class="w-full sm:w-1/2 sm:order-first -ml-40">
+          <div class="w-full sm:w-1/2 sm:order-first">
             <img class="w-full h-full rounded-full" src={paying_with_nfc} alt="image" />
           </div>
         </div>

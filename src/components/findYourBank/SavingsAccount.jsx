@@ -4,7 +4,7 @@ import find_ur_bank2 from '../../image/find_ur_bank2.png'
 const SavingsAccount = () => {
   return (
     <section className='bg-gray-100 py-5' >
-        <div class="container max-w-8xl mx-auto m-20 ">
+        <div class="container max-w-7xl mx-auto m-20 ">
             <h1 className='text-gray-700 text-5xl font-bold text-center mb-2'>Savings Account</h1>
             <div className='w-full flex justify-center'>
             <div className='bg-orange-500 w-28 h-1 mb-16' data-aos="fade-right"> </div>

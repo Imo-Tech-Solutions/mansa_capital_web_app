@@ -9,10 +9,10 @@ const RealTimeSecurity = () => {
       };
   return (
     <section className='mt-24'>
-    <div class="container max-w-8xl mx-auto m-8">
+    <div class="w-full flex justify-center items-center m-8">
 
       <div
-        class="flex flex-wrap flex-col-reverse sm:flex-row-reverse"
+        class="flex flex-wrap flex-col-reverse sm:flex-row-reverse max-w-7xl "
       >
         <div class="w-full sm:w-1/2 p-6
              px-5 flex flex-col justify-center"
@@ -44,7 +44,7 @@ const RealTimeSecurity = () => {
 
         </div>
         <div class="w-full sm:w-1/2 sm:order-first">
-          <img class="w-full h-full" src={mansa_card} alt="image" />
+          <img class="w-full h-auto" src={mansa_card} alt="image" />
         </div>
       </div>
     </div>

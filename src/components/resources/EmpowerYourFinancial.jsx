@@ -9,10 +9,10 @@ const EmpowerYourFinancial = () => {
   };
   return (
     <section className='mt-24'>
-      <div class="w-full mx-auto my-8 overflow-hidden">
+      <div class=" flex justify-center items-center w-full mx-auto my-8 overflow-hidden">
 
         <div
-          class="flex flex-wrap flex-col-reverse sm:flex-row-reverse"
+          class="flex flex-wrap flex-col-reverse sm:flex-row-reverse max-w-7xl"
         >
           <div class="w-full sm:w-1/2 p-6
                 px-5 flex flex-col justify-center"
@@ -44,7 +44,7 @@ const EmpowerYourFinancial = () => {
           </p>
 
           </div>
-          <div class="w-full sm:w-1/2 sm:order-first -mr-40">
+          <div class="w-full sm:w-1/2 sm:order-first ">
             <img class="w-full h-full rounded-full" src={women_with_smart_phone} alt="image" />
           </div>
         </div>

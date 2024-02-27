@@ -4,10 +4,10 @@ import phone2 from '../../image/phone2.png'
 const SecureBanking = () => {
   return (
     <section >
-        <div class="container max-w-8xl mx-auto m-8">
+        <div class="w-full flex justify-center items-center m-8">
 
           <div
-            class="flex flex-wrap flex-col-reverse sm:flex-row-reverse"
+            class="flex flex-wrap flex-col-reverse sm:flex-row-reverse max-w-7xl"
           >
             <div class="w-full sm:w-1/2 p-6
                  px-5 flex flex-col justify-center"

@@ -5,7 +5,7 @@ const SpendingAccount = () => {
   return (
 
     <section >
-        <div class="container max-w-8xl mx-auto m-20">
+        <div class="container max-w-7xl mx-auto m-20">
             <h1 className='text-gray-700 text-5xl font-bold text-center mb-2'>Spending Account</h1>
             <div className='w-full flex justify-center'>
             <div className='bg-orange-500 w-28 h-1 mb-16' data-aos="fade-right"> </div>
