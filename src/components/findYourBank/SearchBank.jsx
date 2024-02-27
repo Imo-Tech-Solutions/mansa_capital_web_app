@@ -100,8 +100,6 @@ const SearchBank = () => {
       </div>
 
       <Map />
-
-
     </>
   )
 }
