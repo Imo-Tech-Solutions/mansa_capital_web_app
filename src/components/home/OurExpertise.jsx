@@ -52,8 +52,8 @@ const cardData = [
     return (
       <div
         className="w-auto sm:w-96 h-expertise-card max-w-md p-6 flex flex-col
-        rounded-lg shadow-md bg-white items-center
-        border-b-4 transition duration-300 ease-in-out"
+        rounded-lg  bg-white items-center shadow transition duration-300
+        ease-in-out"
       >
         <div className="flex items-center justify-center mb-4">
             <img className="w-28 h-28" src={icon} alt="Icon" />
