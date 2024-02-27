@@ -1,9 +1,13 @@
 import React from 'react'
+import Contact_us from '../components/contactUs/ContactUs '
 import Inprogress from '../components/Inprogress'
 
 const ContactUs = () => {
   return (
-    <Inprogress />
+    <>
+    <Contact_us />
+    </>
+
   )
 }
 
