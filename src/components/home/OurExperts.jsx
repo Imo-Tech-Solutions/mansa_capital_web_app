@@ -66,7 +66,7 @@ const OurExperts = () => {
 
   return (
     <section className="bg-gray-100 pb-10 pt-5 mt-10" id="ourExperts">
-      <div className="container max-w-8xl mx-auto m-8">
+      <div className="container max-w-7xl mx-auto m-8">
         <h2 className="text-5xl text-center font-bold mb-5">
           Our Dedicated Experts
         </h2>

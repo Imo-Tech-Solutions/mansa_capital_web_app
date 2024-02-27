@@ -38,7 +38,7 @@ const Rating = () => {
 
   return (
     <div className='w-screen py-14 my-10 flex justify-center'>
-      <div className='w-9/12 flex justify-between'>
+      <div className='w-9/12 max-w-7xl flex justify-between'>
         <div>
           <h1 className='font-bold text-3xl md:text-5xl lg:text-8xl text-orange-500'>
             {experienceCount}+

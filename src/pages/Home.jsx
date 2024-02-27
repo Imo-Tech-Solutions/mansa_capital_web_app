@@ -23,10 +23,10 @@ const Home = () => {
       <Rating />
 
       <section class=" " id="whoWeAre">
-        <div class="container max-w-8xl mx-auto m-8">
+        <div class="flex justify-center max-w-8xl m-8">
 
           <div
-            class="flex flex-wrap flex-col-reverse sm:flex-row"
+            class="flex flex-wrap flex-col-reverse sm:flex-row max-w-7xl"
           >
             <div class="w-full sm:w-1/2 p-6
               bg-cover bg-center bg-no-repeat px-5 flex flex-col justify-center"
@@ -64,12 +64,12 @@ const Home = () => {
       </section>
 
       <section className="flex flex-col justify-center items-center w-full py-6 sm:px-2 bg-white mt-16">
-        <div className='w-10/12 sm:px-16'>
+        <div className='w-10/12 max-w-7xl'>
           <h3 className='text-2xl text-orange-500'>
             SERVICES
           </h3>
         </div>
-        <div className='w-10/12 mb-10 flex justify-between sm:px-16'>
+        <div className='w-10/12 mb-10 flex justify-between  max-w-7xl'>
           <h2
             className="text-3xl font-bold leading-none md:text-4xl sm:text-6xl
             text-purple-header my-6"
@@ -95,7 +95,7 @@ const Home = () => {
       < OurExperts />
 
       <section class="bg-white pb-10 pt-5 sm:mt-7 mt-0" id="ClientsSayAboutUs">
-        <div class="container max-w-8xl mx-auto m-8">
+        <div class="container max-w-7xl mx-auto m-8">
 
           <div
             class="flex flex-wrap flex-col sm:flex-row-reverse"

@@ -55,53 +55,64 @@ const HeroCarousel = () => {
         slideInterval={8000}
       >
 
-        <div className="flex flex-col h-screen w-screen justify-center dark:text-white
-          bg-cover bg-center bg-no-repeat px-5 "
+        <div
+          className="flex flex-row h-screen w-screen items-center justify-center  dark:text-white
+          bg-cover bg-center bg-no-repeat px-0 "
           style={{ backgroundImage: `url(${carousel_1})` }}
         >
-          <h1 className='font-extrabold sm:text-7xl text-6xl sm:ml-20'>
+
+      <div className='flex flex-col max-w-7xl  w-screen'>
+
+        <div className='w-full max-w-7xl'>
+          <h1 className='font-extrabold sm:text-7xl text-6xl sm:ml-2'>
             Your Personal <br/> Online Accountant
           </h1>
 
-          <p className='sm:ml-20 mt-5' >
+          <p className='sm:ml-2 mt-5' >
           We provide advice when your business needs it, not just when you ask for it.
           </p>
 
           <Link
             to='#'
             className="inline-block px-2 py-2 border border-orange-500
-              text-orange-500 hover:bg-orange-500 w-64 sm:ml-24 ml-5 mt-10
+              text-orange-500 hover:bg-orange-500 w-64 sm:ml-2 ml-5 mt-10
               hover:text-white rounded transition duration-300 ease-in-out
               font-bold text-3xl justify-center items-center text-center
               "
           >
             Read More
           </Link>
+          </div>
+          </div>
         </div>
 
-        <div className="flex flex-col h-screen w-screen justify-center dark:text-white
-          bg-cover bg-center bg-no-repeat px-5 "
+        <div
+          className="flex flex-row h-screen w-screen items-center justify-center  dark:text-white
+          bg-cover bg-center bg-no-repeat px-0 "
           style={{ backgroundImage: `url(${carousel_2})` }}
         >
-          <h1 className='font-extrabold sm:text-7xl text-6xl sm:ml-20'>
-            Download our  <br/> mobile application
-          </h1>
+            <div className='flex flex-col max-w-7xl  w-screen'>
+            <h1 className='font-extrabold sm:text-7xl text-6xl sm:ml-2'>
+              Download our  <br/> mobile application
+            </h1>
 
-          <p className='sm:ml-20 mt-5' text-4x1 >
-          Our Mobile application provide easy and secure access to your account.
-          </p>
+            <p className='sm:ml-2 mt-5' text-4x1 >
+            Our Mobile application provide easy and secure access to your account.
+            </p>
 
-          <Link
-            to='#'
-            className="inline-block px-2 py-2 border border-orange-500
-              text-orange-500 hover:bg-orange-500 w-64 sm:ml-24 ml-5 mt-10
-              hover:text-white rounded transition duration-300 ease-in-out
-              font-bold text-3xl justify-center items-center text-center
-              "
-          >
-            Download App
-          </Link>
+            <Link
+              to='#'
+              className="inline-block px-2 py-2 border border-orange-500
+                text-orange-500 hover:bg-orange-500 w-64 sm:ml-2 ml-5 mt-10
+                hover:text-white rounded transition duration-300 ease-in-out
+                font-bold text-3xl justify-center items-center text-center
+                "
+            >
+              Download App
+            </Link>
+          </div>
         </div>
+
       </Carousel>
     </Flowbite>
   )

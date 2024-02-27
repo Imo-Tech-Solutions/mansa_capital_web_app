@@ -50,6 +50,7 @@ const cardData = [
     }, []);
 
     return (
+      <div className='w-full max-w-7xl'>
       <div
         className="w-auto sm:w-96 h-expertise-card max-w-md p-6 flex flex-col
         rounded-lg  bg-white items-center shadow transition duration-300
@@ -62,6 +63,7 @@ const cardData = [
         <br />
         <p className="text-gray-700 mb-4">{description}</p>
         <Link className='bg-orange-500 hover:bg-orange-400 text-white px-8 py-2 rounded mt-2'>Read More</Link>
+      </div>
       </div>
     );
   };
