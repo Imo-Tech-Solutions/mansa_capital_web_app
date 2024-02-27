@@ -68,9 +68,9 @@ const Card = ({ icon, heading, descriptions, link }) => {
 
   return (
     <div
-      className="w-auto sm:w-96 h-expertise-card max-w-md flex flex-col rounded-lg shadow-md
-        bg-white items-center transition duration-300 ease-in-out
-        "
+      className="w-auto sm:w-80 h-expertise-card max-w-sm flex flex-col rounded-lg shadow-md
+      bg-white items-center transition duration-300 ease-in-out
+      "
     >
       <div className="flex items-center justify-center mb-4 w-full">
         <img className="w-full h-52 rounded-t-lg" src={icon} alt="Icon" />
@@ -82,6 +82,7 @@ const Card = ({ icon, heading, descriptions, link }) => {
           <li className='border-b border-gray-500 mt-2' key={index}>{description}</li>
         ))}
       </ul>
+
     </div>
   );
 };
@@ -89,12 +90,13 @@ const Card = ({ icon, heading, descriptions, link }) => {
 const KeyServiceAreas = () => {
   return (
     <div className="flex flex-wrap w-full justify-center items-center mt-16 mb-10">
+      <div className='w-full max-w-7xl'>
       <h2 className='text-gray-700 font-bold sm:text-4xl text-3xl mb-5 ml-4 sm:ml-0'>
         Our Expertise and Key Service Areas
       </h2>
-      <div className="flex flex-wrap w-11/12 justify-center items-center">
+      <div className="flex flex-wrap justify-center items-center">
         {cardData.map((card) => (
-          <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-0 gap-2 sm:gap-0 sm:mt-0 mt-6" key={card.id}>
+          <div className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-0 gap-4 sm:gap-4 sm:mt-0 mt-6" key={card.id}>
             <Card
               icon={card.icon}
               heading={card.heading}
@@ -103,6 +105,7 @@ const KeyServiceAreas = () => {
             />
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

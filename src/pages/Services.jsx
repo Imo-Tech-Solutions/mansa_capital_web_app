@@ -10,7 +10,7 @@ const Services = () => {
       <Banner />
       <KeyServiceAreas />
       <div className='w-full flex justify-center mb-24 mt-16'>
-        <div className='flex sm:flex-row flex-col items-center justify-between w-10/12 sm:h-60 py-4 rounded-xl bg-orange-500
+        <div className='flex sm:flex-row flex-col items-center justify-between w-10/12 max-w-7xl sm:h-60 py-4 rounded-xl bg-orange-500
           bg-center bg-no-repeat px-10
         '
         style={{ backgroundImage: `url(${dorts})` }}
